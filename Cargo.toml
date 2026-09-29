@@ -1,19 +1,20 @@
 [workspace]
-resolver = "2"
 members = [
-  "microbit-common",
-  "microbit",
-  "microbit-v2",
-  "examples/*",
-  "xtask",
+    "microbit-common",
+    "microbit",
+    "microbit-v2",
+    "examples/*",
+    "xtask",
+    "tecnmRust",
+    "tecnmRust/test/microbitembassy-tec",
 ]
-
-# Modify default build profiles to make debugging easier
-[profile.release]
-debug = 2
-lto = "off"
+resolver = "2"
 
 [profile.dev]
-debug = 2
 opt-level = 1
 lto = "off"
+debug = 2
+
+[profile.release]
+lto = "off"
+debug = 2

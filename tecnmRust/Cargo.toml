@@ -24,6 +24,7 @@ v1 = ["microbit"]
 v2 = ["microbit-v2"]
 
 default = [
+  "v2",
   "defmt-default",
 ]
 
@@ -34,3 +35,4 @@ defmt-debug = []
 defmt-info = []
 defmt-warn = []
 defmt-error = []
+microbit = ["dep:microbit"]
